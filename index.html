@@ -4,21 +4,134 @@
   <meta charset="UTF-8">
   <title>Kat's Kreations</title>
   <style>
-    body {
-      margin: 0;
-      background-color: #fffceb; /* soft cream color */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    img {
-      max-width: 90%;
-      height: auto;
-    }
+#provider-theme {
+  background-color: #fffdf0; /* Light cream background */
+  color: #4a2e00;            /* Chocolate brown text */
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2em;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#provider-theme h1,
+#provider-theme h2 {
+  color: #e67300; /* Warm orange headers */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#provider-theme a {
+  color: #e85c9c; /* Friendly pink links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#provider-theme a:hover {
+  color: #f97f65;
+  text-decoration: underline;
+}
+
+#provider-theme ul {
+  padding-left: 1.2em;
+  margin-bottom: 2em;
+}
+
+#provider-theme li {
+  margin-bottom: 1em;
+}
+
+#provider-theme form {
+  background-color: #fff7e8;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-top: 2em;
+}
+
+#provider-theme input,
+#provider-theme select,
+#provider-theme textarea,
+#provider-theme button {
+  width: 100%;
+  padding: 0.6em 0.75em;
+  margin-top: 0.3em;
+  margin-bottom: 1.2em;
+  border: 1px solid #e4d8c3;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#provider-theme input,
+#provider-theme select,
+#provider-theme textarea {
+  background-color: #fdfaf4;
+  color: #4a2e00;
+}
+
+#provider-theme input:focus,
+#provider-theme textarea:focus,
+#provider-theme select:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.3);
+}
+
+#provider-theme button {
+  background-color: #ffcc00;
+  color: #4a2e00;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#provider-theme button:hover {
+  background-color: #ffaa00;
+}
+
+#provider-theme .thank-you {
+  border: 1px solid #00a86b;
+  background: #e3ffe5;
+  color: #2d4a2e;
+  padding: 1em;
+  border-radius: 6px;
+  margin-bottom: 1.5em;
+  font-weight: 500;
+}
+
+#provider-theme .logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5em auto;
+}
+
+@media (max-width: 768px) {
+  #provider-theme {
+    padding: 1em;
+  }
+  #provider-theme h1 { font-size: 1.6em; }
+  #provider-theme h2 { font-size: 1.3em; }
+}
+
+@media (max-width: 480px) {
+  #provider-theme {
+    padding: 1em;
+    font-size: 0.95em;
+  }
+  #provider-theme h1 { font-size: 1.4em; }
+  #provider-theme h2 { font-size: 1.1em; }
+}
+
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Kat's Kreations Logo">
+  <div id="provider-theme">
+    <img src="logo.png" alt="Kat's Kreations Logo">
+  </div>
 </body>
 </html>
