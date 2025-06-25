@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Kat's Kreations</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fffef5;
-    color: #3a2b1f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  #provider-theme {
-    text-align: center;
-    padding: 1em;
-  }
-
-  .logo {
-    max-width: 90vw;
-    height: auto;
-    margin-bottom: 1em;
-  }
-
-  h1, h2, p {
-    margin: 0.5em 0;
-  }
-
-  @media (min-width: 768px) {
-    .logo {
-      max-width: 600px;
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffef5;
+      color: #3a2b1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
     }
-  }
-</style>
+
+    #provider-theme {
+      padding: 1.5em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      background: #fffef0;
+    }
+
+    .logo {
+      max-width: 90vw;
+      height: auto;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.5em 0 0.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 0.2em 0 1em;
+      max-width: 80vw;
+    }
+
+    @media (min-width: 768px) {
+      .logo {
+        max-width: 600px;
+      }
+
+      p {
+        max-width: 600px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <div id="provider-theme" name="provider-theme">
-    <img src="logo.png" alt="Kat's Kreations Logo" id="logo" class="logo">
-  </div>
+<div id="provider-theme" name="provider-theme">
+  <img src="logo.png" alt="Kat's Kreations Logo" id="logo" class="logo">
+  <h1>Welcome to Kat's Kreations</h1>
+  <p>Handcrafted yarn and rubber band bracelets, keychains, and more — made with love and color!</p>
+  <a href="https://providers.gigdates.net/providers/kat" target="_blank" rel="noopener">
+    <img src="https://providers.gigdates.net/media/logo.png" alt="Gigdates Provider Link" style="max-width: 150px; height: auto; margin-top: 1em;">
+  </a>
+</div>
 </body>
-
 </html>
